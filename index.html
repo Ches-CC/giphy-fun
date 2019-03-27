@@ -11,26 +11,26 @@
 </head>
 
 
-<body>
+<body class="bg-info">
     <div class="container">
         <div>
-            <div class="jumbotron">
-                <h1>Giphy Fun!</h1>
+            <div class="jumbotron bg-dark text-light text-center mb-0">
+                <h1>Giphy Me a Break!</h1>
             </div>
         </div>
-        <form>
-            <div class="form-group">
+        <form class="text-center bg-light border">
+            <div class="form-group m-2 p-3">
                 <!--buttons-->
                 <div id="button-list"></div>
-                <label for="query-giphy">Search for one of your own, weirdo!</label>
-                <input type="text" class="form-control query-giphy" name="Search">
-                <button type="submit" class="btn btn-primary">Submit!</button>
+                <label class="mb-1" for="query-giphy">Search for one of your own, weirdo!</label>
+                <input type="text" id="input-search" class="form-control button mb-1">
+                <button type="submit" id="search-bar" class="btn button btn-primary">Submit!</button>
             
             </div>
             <div>
                 <!--gif list-->
-                <div id="gif-list">
-                    Gifs Display Here
+                <div id="gif-list" class="content-center">
+                    <!-- Gifs Display Here -->
                 </div>
             </div>
         </form>
