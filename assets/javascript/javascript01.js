@@ -26,7 +26,7 @@ $(document).ready(function () {
         //I think it's logging ALL the buttons' info; it's console logging in a weird way...
         buttonText.text($(".gifButtons"));
         console.log(buttonText);
-        var gifQueryURL = "http://api.giphy.com/v1/gifs/search?q="
+        var gifQueryURL = "https://api.giphy.com/v1/gifs/search?q="
         + buttonText + "&api_key=ACXLyhgAnWu2x7cLRHvyYUobXHDiTbSP&limit=10";
 
         $.ajax({
@@ -78,7 +78,7 @@ $(document).ready(function () {
         } else {
             // var gifSearchSubj = $(this).attr(searchInput);
             // thought the better of that one...
-            var gifQueryURL = "http://api.giphy.com/v1/gifs/search?q="
+            var gifQueryURL = "https://api.giphy.com/v1/gifs/search?q="
                 + searchInput + "&api_key=ACXLyhgAnWu2x7cLRHvyYUobXHDiTbSP&limit=10";
 
             console.log(searchInput);
